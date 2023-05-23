@@ -4,9 +4,9 @@ console.log(
   "background: #fadfa3; padding:5px 0;"
 );
 photos();
-//查询所有用户api “https://memos.smitten.top/api/memo/all?tag=相册”
+//查询所有用户api “https://mos.nieyun.live/api/memo?creatorId=1&tag=相册”
 function photos() {
-  fetch("https://mos.nieyun.live/api/memo?creatorId=1&tag=相册")
+  fetch("https://mos.nieyun.live/api/memo/all?tag=相册")
     .then((res) => res.json())
     .then((data) => {
       // 记得修改memos地址
